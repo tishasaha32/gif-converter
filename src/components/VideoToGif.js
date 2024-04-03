@@ -7,8 +7,6 @@ const VideoToGifConverter = ({ video }) => {
   const inputVideoUrl = video;
   console.log(inputVideoUrl);
   const handleClick = () => {
-    console.log("Convert button clicked");
-
     const outputGifOptions = {
       video: inputVideoUrl,
       numFrames: 15,
@@ -40,13 +38,13 @@ const VideoToGifConverter = ({ video }) => {
   return (
     <div className={styles.videoToGifContainer}>
       <div className={styles.buttonContainer}>
-        <button onClick={handleClick} className={styles.convertToGifButton}>
+        <button onClick={handleClick} className={styles.button}>
           Convert to GIF
         </button>
         <button
           onClick={handleDownload}
           disabled={!gifUrl}
-          className={styles.convertToGifButton}
+          className={styles.button}
         >
           Download
         </button>
