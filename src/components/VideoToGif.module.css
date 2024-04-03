@@ -1,0 +1,17 @@
+.videoToGifContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: auto;
+    width: 75vw;
+}
+.buttonContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 8rem 0 5rem 10rem;
+    width: 200px;
+}
+.convertToGifButton{
+    padding: 10px;
+    border-radius: 8px;
+}
